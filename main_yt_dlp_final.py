@@ -45,6 +45,7 @@ def Widgets():
                                 font=("Helvetica", 12),
                                 state="normal",
                                 text_color_disabled="green"
+
                                 )
     radio_B1.grid(row=5,column=0,columnspan=2,pady=5,padx=5)
     radio_B2=ctk.CTkRadioButton(root,text="Audio",value='audio',variable=radio_var,
@@ -144,6 +145,6 @@ root.resizable(True, True)
 
 url=StringVar()
 path=StringVar()
-radio_var=StringVar(value='default')
+radio_var=StringVar(value='audio-video')
 Widgets()
 root.mainloop()
